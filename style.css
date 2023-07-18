@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Nunito:wght@600&family=Playfair+Display&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+
+}
+
+:root{
+    --primary-text-color: #183b56;
+    --secondar-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+}
+
+
+body{
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-text-color);
+}
+p{
+    font-family: 'Roboto', serif;
+    color: var(--secondar-text-color);
+    line-height: 1.4rem;
+}
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+
+}
+
+.container{
+    max-width: 1450px;
+    margin-inline: auto;
+    overflow: hidden;
+
+}
+nav{
+    background-color: #dafcff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+
+}
+.navbar{
+    justify-content: space-between;
+    padding: 8px 0px;
+
+}
+
+.company-logo img{
+    width: 80px;
+}
+
+.nav_links ul{
+    gap: 16px;
+}
+
+.hover-link{
+    cursor: pointer;
+
+}
+.hover-link:hover{
+    color: var(--secondar-text-color);
+}
+.nav-item{
+    color: black;
+    font-size: 1.4rem;
+}
+.nav-item.active{
+    color: var(--accent-color-dark);
+}
+.hover-link:active{
+    color: white;
+}
+
+.search-bar{
+    height: 32px;
+    gap: 8px;
+    
+}
+.search-input{
+    width: 230px;
+    height: 35px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#search-button{
+    height: 35px;
+    padding: 5px;
+    width:80px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: var(--accent-color);
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+}
+#search-button:hover{
+    background-color: #183b56;
+}
+#search-button:active{
+    background-color: var(--accent-color-dark);
+}
+
+main{
+    padding: 20px;
+    margin-top: 115px;
+}
+.cards-container{
+justify-content: space-between;
+flex-wrap: wrap;
+row-gap: 20px;
+align-items: start;
+
+
+}
+
+.card{
+    width: 360px;
+    min-height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 10px 18px 12px;
+    background-color: rgb(254, 254, 254);
+    transform:scale(104%);
+}
+.card-header img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+
+    
+}
+.card-content{
+    padding: 12px;
+    text-align: center;
+}
+
+.news-source{
+    padding: 5px;
+}
+.news-desc{
+    padding: 23px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    justify-content: center;
+    height: 50px;
+    
+}
+footer ul{
+    gap: 10px;
+
+}
